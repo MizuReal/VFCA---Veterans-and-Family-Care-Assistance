@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F3F0EE;
+  --color-lifted-cream: #FCFBFA;
+  --color-ink: #141413;
+  --color-charcoal: #262627;
+  --color-signal-orange: #CF4500;
+  --color-light-orange: #F37338;
+  --color-slate: #696969;
+  --color-ghost-cream: #E8E2DA;
+  --color-hairline: rgba(20, 20, 19, 0.15);
+
+  --font-family-display: "Sofia Sans", Arial, sans-serif;
+  --font-family-body: "Sofia Sans", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F3F0EE;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.7s ease forwards;
+}
+
+@keyframes fade-in-slow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-slow {
+  animation: fade-in-slow 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
