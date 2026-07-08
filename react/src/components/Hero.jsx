@@ -7,7 +7,19 @@ export default function Hero() {
       className="relative min-h-[90vh] flex items-center justify-center px-4 sm:px-6 pt-20 pb-16 sm:pb-24"
       aria-label="Hero"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-cream via-cream to-[#e8ddd5] pointer-events-none" />
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/hero-banner.jpg"
+          className="w-full h-full object-cover"
+        >
+          <source src="/banner_vid.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-br from-cream/70 via-cream/50 to-[#e8ddd5]/60 pointer-events-none" />
+      </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">

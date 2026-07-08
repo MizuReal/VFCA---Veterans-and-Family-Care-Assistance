@@ -19,8 +19,9 @@ export default function Navbar() {
       aria-label="Main navigation"
     >
       <div className="w-full max-w-7xl bg-white/95 backdrop-blur-md shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] rounded-full px-5 sm:px-10 h-12 flex items-center justify-between">
-        <a href="#" className="text-ink font-[500] text-base tracking-[-0.32px] shrink-0" aria-label="Home">
-          VFCA
+        <a href="#" className="flex items-center gap-2 shrink-0" aria-label="Home">
+          <img src="/logo.png" alt="" className="h-6 w-auto" />
+          <span className="text-ink font-[500] text-base tracking-[-0.32px]">VFCA</span>
         </a>
 
         <div className="hidden md:flex items-center gap-10 lg:gap-12">
