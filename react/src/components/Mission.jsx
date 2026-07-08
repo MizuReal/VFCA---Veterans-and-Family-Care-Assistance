@@ -18,7 +18,7 @@ export default function Mission() {
       />
 
       <div
-        className="absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 text-[48px] sm:text-[64px] lg:text-[80px] font-[500] leading-[1] tracking-[-1.6px] bg-gradient-to-r from-signal-orange/[0.18] via-ink/[0.08] to-transparent bg-clip-text text-transparent pointer-events-none select-none whitespace-nowrap animate-fade-in-slow"
+        className="absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 text-[48px] sm:text-[64px] lg:text-[80px] font-[500] leading-[1] tracking-[-1.6px] bg-gradient-to-r from-signal-orange/[0.40] via-ink/[0.20] to-ink/[0.06] bg-clip-text text-transparent pointer-events-none select-none whitespace-nowrap animate-fade-in-slow"
         aria-hidden="true"
         style={{ animationDelay: '0.3s' }}
       >
